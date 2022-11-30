@@ -45,7 +45,6 @@ fn main() {
         .clang_arg("-x")
         .clang_arg("c++")
         .clang_arg("-std=c++14")
-        .vtable_generation(false)
         .allowlist_file("glucose/sources/simp/interface.h")
         .rustfmt_bindings(true)
         .generate()

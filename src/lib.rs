@@ -2,6 +2,7 @@ use std::{ptr::NonNull, slice::from_raw_parts, ops::Not};
 
 mod bindings;
 
+#[derive(Debug)]
 pub struct SimpSolver {
     ptr: NonNull<bindings::simp_solver>,
     cex: Vec<Lit>,
